@@ -247,7 +247,7 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
-
+  padding-bottom: 46px;
 }
 
 .feature {
@@ -263,16 +263,18 @@ header .mobile {
 }
 
 .feature h2 {
-  padding-bottom: .5rem;
-  font-size: 2.25rem;
+  margin: 0;
+  margin-top: 40px;
+  font-size: 36px;
   font-weight: bold;
   color: #4a4a4a;
 }
 
 .feature h3 {
-  font-size: 1rem;
+  font-size: 16px;
+  margin: 0;
   line-height: 1.2;
-  font-weight: 300;
+  font-weight: 100;
   color: #4a4a4a;
 }
 
@@ -304,7 +306,7 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+  padding: 64px 0;
   background-color: #4a4a4a;
 }
 
@@ -314,21 +316,28 @@ header .mobile {
 }
 
 #filters-section .content h2 {
-  font-size: 2.25rem;
+  font-size: 36px;
   font-weight: bold;
   color: white;
+  margin: 0;
 }
 
 #filters-section .content h3 {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.4;
-  font-weight: 300;
+  font-weight: 50;
   color: white;
+  margin: 0;
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
+}
+
+#filters-section .images-container img {
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -367,12 +376,15 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#quotes-section quote {
-  padding-right: 1.875rem;
+#quotes-section .quote {
+  padding-right: 30px;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
@@ -404,18 +416,24 @@ header .mobile {
 /* Footer */
 
 footer {
+  display: flex;
+  justify-content: center;
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  height: 62px;
+
 }
 
 footer .content {
+  align-items: center;
   color: white;
   display: flex;
   font-size: .75rem;
+  width: 100%;
+  margin: 0 32px;
 }
 
 footer .copyright {
-  flex-grow: 1;
+  flex: 1;
 }
 
 @media only screen and (min-width: 760px) {
